@@ -1,0 +1,30 @@
+/* GENERAL */
+body { font-family: 'Poppins', sans-serif; }
+.text-purple { color: #5C0099; }
+.nav-purple, .footer { background: #47186B; }
+
+.btn-unete {
+    background-color: #FF6B00 !important; 
+    border-color: #FF6B00 !important;
+    color: white !important;
+}
+
+
+.btn-explora{
+  background: #FF6B00;
+  color: white;
+}
+.btn-explora:hover { background: #FF6B00; }
+
+.btn-unete:hover {
+    background-color: #e66200 !important;
+    border-color: #e66200 !important;
+}
+
+/* HERO */
+.hero {
+  background: #47186B;
+  height: 420px;
+}
+.hero h1 { font-size: 4.5rem; }
+
