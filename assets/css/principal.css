@@ -1,30 +1,317 @@
-/* GENERAL */
-body { font-family: 'Poppins', sans-serif; }
-.text-purple { color: #5C0099; }
-.nav-purple, .footer { background: #47186B; }
-
-.btn-unete {
-    background-color: #FF6B00 !important; 
-    border-color: #FF6B00 !important;
-    color: white !important;
+.navbar-purple {
+  background-color: #3d0463f0;
 }
 
-
-.btn-explora{
-  background: #FF6B00;
+.btn-orange {
+  background-color: #FF6B00 ;
+  border-color: #FF6B00 ;
   color: white;
 }
-.btn-explora:hover { background: #FF6B00; }
 
-.btn-unete:hover {
-    background-color: #e66200 !important;
-    border-color: #e66200 !important;
-}
-
-/* HERO */
 .hero {
   background: #47186B;
-  height: 420px;
+  padding: 0; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.hero h1 { font-size: 4.5rem; }
+
+.hero-img {
+  max-height: 380px;      
+  width: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+}
+.hero p{
+  font-size:1.4rem;
+color: #ffffff;
+}
+
+
+:root {
+    --purple: #47186B; 
+    --orange: #FF6A00;
+    --gray-light: #f8f9fa;
+}
+
+
+.icons {
+    width: 70px;
+   
+}
+
+.title-nosotros {
+  font-size: 3rem;
+  color: #47186B;
+}
+.subtitle-nosotros {
+  font-size: 1.5rem;
+  color: #47186B;
+}
+
+
+.course-card {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.05); 
+    border-radius: 15px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.course-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.course-card .card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 150px; 
+    object-fit: cover;
+}
+
+.course-card .card-body {
+    padding: 1rem;
+    text-align: center;
+}
+
+.course-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 0.5rem;
+}
+
+
+.course-price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+}
+
+.course-offer-text {
+    background-color: var(--orange);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    line-height: 1; 
+}
+
+
+.course-price-old {
+    color: #999; 
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+
+
+.course-price-new {
+    color: #333; 
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.btn-add-to-cart {
+    background-color: var(--orange);
+    border-color: var(--orange);
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 8px; 
+    transition: background-color 0.2s;
+}
+
+.btn-add-to-cart:hover {
+    background-color: darken(var(--orange), 10%); 
+    border-color: darken(var(--orange), 10%);
+    color: orangered; 
+}
+
+
+.product-card img { border-radius: 10px; }
+.product-card p { 
+  font-weight: bold; color: #FF6A00; }
+
+.dom-modal {
+  background: #0f0f0f;
+  color: white;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Botón de cierre */
+.dom-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 10;
+  filter: invert(1);
+}
+
+
+.dom-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dom-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.dom-title span {
+  color: #ff007f;
+}
+
+.dom-price {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #aaaaaa;
+}
+
+.new-price {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+
+
+.pp-modal {
+  background: #47186B; 
+  color: white;
+  border-radius: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pp-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 15;
+  filter: invert(3);
+}
+
+
+.pp-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pp-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.pp-title span {
+  color: #FF6B00; 
+}
+
+.pp-price {
+  font-size: 22px;
+  margin-top: 18px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #d0b3ff;
+}
+
+.new-price {
+  font-weight: 700;
+  color: #FF6B00;
+}
+
+/* Botón degradado de tu marca */
+.pp-btn {
+  background: linear-gradient(90deg, #5C0099, #FF6B00);
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: white;
+  margin-top: 22px;
+  transition: .3s;
+}
+
+.pp-btn:hover {
+  opacity: .9;
+}
+
+.pp-small-text {
+  font-size: 20px;
+  color: #ffcf80;
+}
+
+
+.pp-right {
+  background: #fff; 
+  padding: 15px;
+}
+
+
+.pp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+
+.pp-grid img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+
+.pp-grid img:nth-child(1) {
+  height: 250px;
+}
+
+.pp-grid img:nth-child(2) {
+  height: 250px;
+}
+
+.pp-grid img:nth-child(3) {
+  height: 360px;
+  grid-row: span 2; 
+}
+
+.pp-grid img:nth-child(4) {
+  height: 240px;
+  
+}
+
+.pp-grid img:nth-child(5) {
+  height: 180px;
+}
+
+
+@media(max-width: 768px) {
+  .modal-dialog {
+    margin: 20px;
+  }
+  .pp-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
