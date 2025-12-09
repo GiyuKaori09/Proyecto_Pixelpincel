@@ -1,0 +1,247 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.navbar-purple {
+  background-color: #3d0463f0;
+}
+
+.btn-orange {
+  background-color: #FF6B00;
+  border-color: #FF6B00;
+  color: white;
+}
+
+
+.dom-modal {
+  background: #0f0f0f;
+  color: white;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.pp-left {
+  background: #47186B;
+  color: white;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pp-right {
+  background: #fff;
+  padding: 15px;
+}
+
+.pp-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 15;
+  filter: invert(1);
+  background-color: black;
+}
+
+
+.pp-title span {
+  color: #FF6B00;
+}
+
+
+/* Botón degradado de tu marca */
+.pp-btn {
+  background: linear-gradient(90deg, #5C0099, #FF6B00);
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: white;
+  margin-top: 22px;
+  transition: .3s;
+}
+
+.pp-btn:hover {
+  opacity: .9;
+}
+
+.pp-small-text {
+  font-size: 20px;
+  color: #ffcf80;
+}
+
+
+.pp-right {
+  background: #fff;
+  padding: 15px;
+}
+
+
+.pp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+
+.pp-grid img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+
+.pp-grid img:nth-child(1) {
+  height: 250px;
+}
+
+.pp-grid img:nth-child(2) {
+  height: 250px;
+}
+
+.pp-grid img:nth-child(3) {
+  height: 360px;
+  grid-row: span 2;
+}
+
+.pp-grid img:nth-child(4) {
+  height: 240px;
+
+}
+
+.pp-grid img:nth-child(5) {
+  height: 180px;
+}
+
+.titulo {
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #6a0dad;
+}
+
+.subtitulo {
+    font-size: 2.1rem;
+    color: #6a0dad
+}
+.text-center {
+    text-align: center !important;
+    font-size: 3rem !important;
+}
+
+.banner {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+
+.masonry {
+    column-count: 4;
+    column-gap: 1rem;
+}
+
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.masonry-item img {
+    width: 100%;
+    display: block;
+}
+
+.nombre-img {
+    padding: 8px 12px;
+    font-size: 1rem;
+    color: #444;
+    font-weight: 600;
+}
+
+
+
+.footer {
+  background-color: #6b88a3;
+  /* azul-gris moderno */
+  padding: 40px 5%;
+  color: white;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-col p {
+  margin: 5px 0;
+  opacity: 0.9;
+}
+
+/* Redes sociales */
+.footer-social a {
+  color: white;
+  margin-right: 12px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  opacity: 0.7;
+}
+
+/* Íconos de FontAwesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+
+@media (max-width: 992px) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 576px) {
+    .masonry {
+        column-count: 1;
+    }
+
+    .footer-icons-row {
+        justify-content: center;
+    }
+
+    .footer-title-col {
+        text-align: center;
+    }
+
+    .footer-link, 
+    .footer-small {
+        text-align: center;
+    }
+}

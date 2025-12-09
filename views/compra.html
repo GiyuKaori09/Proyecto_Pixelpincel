@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/compra.css">
+    <title>Compra en Línea</title>
+    </head>
+<body>
+
+<div class="container">
+
+    <h2>Confirmar Compra</h2>
+
+    <form id="formCompra" class="form-compra">
+    <label>Nombre:</label>
+    <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+
+    <label>Correo:</label>
+    <input type="email" name="correo" placeholder="correo@ejemplo.com" required>
+
+    <label>Producto:</label>
+    <select id="producto" name="producto">
+        <option value="" disabled selected>Selecciona un producto</option>
+        <option value="Pincel ultra fino" data-precio="120">Pincel ultra fino</option>
+        <option value="Pincel mediano Pro" data-precio="180">Pincel mediano Pro</option>
+        <option value="Pincel grueso Premium" data-precio="250">Pincel grueso Premium</option>
+    </select>
+
+    <p>Precio: $<span id="precio"></span></p> <label>Número de tarjeta:</label>
+    <input type="text" name="tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+
+    <label>Método de pago:</label>
+    <select name="pago">
+        <option value="tarjeta">Tarjeta</option>
+        <option value="paypal">Paypal</option>
+    </select>
+
+    <button type="submit" class="btn-compra">Finalizar Compra</button>
+</form>
+</div>
+
+
+<script>
+    // El JavaScript funciona correctamente con los IDs únicos
+    const selectProductos = document.getElementById('productos'); 
+    const spanPrecio = document.getElementById('precio');
+
+    // Mostrar precio al seleccionar el producto
+    selectProducto.addEventListener('change', function() {
+        const precio = this.options[this.selectedIndex].getAttribute('data-precio');
+        spanPrecio.textContent = precio;
+    });
+
+    document.getElementById('formCompra').addEventListener('submit', function(e) {
+        e.preventDefault(); 
+
+        const nombre = this.nombre.value;
+        const producto = this.producto.value;
+        const precio = spanPrecio.textContent;
+        const metodo = this.pago.value;
+
+        if(!producto) {
+            alert("Selecciona un producto antes de pagar.");
+            return;
+        }
+
+        // Mensaje de compra exitosa
+        alert(
+            " ¡Compra exitosa!\n\n" +
+            " Cliente: " + nombre + "\n" +
+            " Producto: " + producto + "\n" +
+            " Total: $" + precio + "\n" + // <-- EL PRECIO AHORA APARECERÁ AQUÍ
+            " Método de pago: " + metodo + "\n\n" +
+            " Tu pedido está en proceso."
+        );
+
+        this.reset();
+        spanPrecio.textContent = "";
+    });
+</script>
+
+
+</body>
+</html>

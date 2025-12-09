@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="/assets/css/principal.css">
+
+  <title>Pixel Pincel</title>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-purple">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">
+        <img src="../assets/imagenes/logo.jpeg"">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-1 mb-lg-0">
+
+          <a href="index.html" class="btn mt-3 text-white">
+            Inicio
+            </a>
+          <a href="cursos.html" class="btn mt-3 text-white">
+            Cursos
+            </a>
+
+          <a href="productos.html" class="btn mt-3 text-white">
+            Productos
+            </a>
+
+          <a href="Proyectos.html" class="btn mt-3 text-white">
+            Proyectos
+            </a>
+
+        </ul>
+
+        
+        <form class="d-flex ms-2">
+          <button class="btn btn-orange text-white border-bottom" type="button" data-bs-toggle="modal" data-bs-target="#modalUnete">
+            Únete Gratis
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+
+
+<header class="hero d-flex align-items-center text-white px-3">
+  <div>
+    <h1 class="fw-bold">Despierta tu Creatividad con Pixel Pincel</h1>
+    <p>Un aprendizaje digital para pintar, crear y aprender</p>
+    <a href="cursos.html" class="btn btn-orange mt-3 text-white">
+    Explora nuestros cursos
+     </a>
+
+  </div>
+
+  <img src="../assets/imagenes/body.jpeg" class="hero-img d-none d-md-block">
+</header>
+
+
+<section class="container py-5">
+  <div class="row align-items-start">
+
+    <div class="col-lg-4 mb-5 text-center text-lg-start">
+      <h2 class="text-purple fw-bold title-nosotros">Sobre Nosotros</h2>
+      <p class="fw-bold subtitle-nosotros text-purple">Bienvenidos a Pixel Pincel</p>
+               
+      <div class="row text-center mt-4 justify-content-center">
+           <div class="col-4 d-flex flex-column align-items-center">
+             <img src="../assets/imagenes/icon1.jpeg" class="icons"><p>Aprende a tu ritmo</p>
+           </div>
+
+           <div class="col-4 d-flex flex-column align-items-center">
+              <img src="../assets/imagenes/icon2.jpeg" class="icons"><p>Más de 60 cursos</p>
+           </div>
+
+           <div class="col-4 d-flex flex-column align-items-center">
+             <img src="../assets/imagenes/icon3.jpeg" class="icons"><p>Certificación profesional</p>
+           </div>
+       </div>
+    </div>
+
+    
+    <div class="col-lg-8 d-flex flex-wrap justify-content-center justify-content-lg-start gap-4">
+
+      <div class="card course-card" style="width: 16rem;">
+        <img src="../assets/imagenes/card1.jpeg" class="card-img-top" alt="Acuarela Botánica">
+        <div class="card-body">
+          <h5 class="card-title course-title">Acuarela Botánica</h5>
+          <div class="course-price-container mb-3">
+            <span class="course-offer-text">Oferta</span>
+            <span class="course-price-old">$49.99</span>
+            <span class="course-price-new">$39.99</span>
+          </div>
+          <a href="#" class="btn btn-orange btn-add-to-cart">Añadir al carrito</a>
+        </div>
+      </div>
+
+      <div class="card course-card" style="width: 15rem;">
+        <img src="../assets/imagenes/card2.jpeg" class="card-img-top" alt="Retrato en Acuarela y Lápiz">
+        <div class="card-body">
+          <h5 class="card-title course-title">Retrato en Acuarela y Lápiz</h5>
+          <div class="course-price-container mb-3">
+            <span class="course-offer-text">Oferta</span>
+            <span class="course-price-old">$59.99</span>
+            <span class="course-price-new">$49.99</span>
+          </div>
+          <a href="#" class="btn btn-orange btn-add-to-cart">Añadir al carrito</a>
+        </div>
+      </div>
+
+      <div class="card course-card" style="width: 16rem;">
+        <img src="../assets/imagenes/card3.jpeg" class="card-img-top" alt="Ilustración Arquitectónica en Acuarela">
+        <div class="card-body">
+          <h5 class="card-title course-title">Ilustración Arquitectónica en Acuarela</h5>
+          <div class="course-price-container mb-3">
+            <span class="course-offer-text">Oferta</span>
+            <span class="course-price-old">$59.99</span>
+            <span class="course-price-new">$49.99</span>
+          </div>
+          <a href="#" class="btn btn-orange btn-add-to-cart">Añadir al carrito</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5" style="background-image: url('../assets/imagenes/fondo-acuarela.jpg'); background-size: cover; background-position: center;">
+    <div class="container text-center text-purple">
+        <h2 class="fw-bold mb-5">Mejora tu plan</h2>
+
+        <div class="row justify-content-center g-4"> 
+            
+            <div class="col-12 col-md-6 col-lg-3 d-flex"> <div class="card shadow border-0 p-3 h-100 d-flex flex-column"> 
+                    <h5 class="fw-bold text-purple">Gratis</h5>
+                    <h3 class="fw-bold text-purple">$0 USD</h3>
+                    <ul class="list-unstyled mt-3 text-start mx-auto lista-planes"> 
+                        <li>Lecciones introductorias</li>
+                        <li>Material PDF básico</li>
+                        <li>Comentarios limitados</li>
+                    </ul>
+                    <button class="btn btn-purple mt-3">Suscribirme</button>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 d-flex"> <div class="card shadow border-0 p-3 h-100 d-flex flex-column">
+                    <h5 class="fw-bold text-purple">Plus</h5>
+                    <h3 class="fw-bold text-purple">$14.99 USD</h3>
+                    <ul class="list-unstyled mt-3 text-start mx-auto lista-planes"> 
+                        <li>Curso completo</li>
+                        <li>Materiales descargables</li>
+                        <li>Actualizaciones</li>
+                    </ul>
+                    <button class="btn btn-purple mt-3">Suscribirme</button>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 d-flex"> <div class="card shadow border-0 p-3 h-100 d-flex flex-column">
+                    <h5 class="fw-bold text-purple">Pro</h5>
+                    <h3 class="fw-bold text-purple">$39.99 USD</h3>
+                    <ul class="list-unstyled mt-3 text-start mx-auto lista-planes"> 
+                        <li>Certificación</li>
+                        <li>Proyectos avanzados</li>
+                        <li>Acceso a sesiones en vivo</li>
+                        <li>Soporte prioritario</li>
+                    </ul>
+                    <button class="btn btn-purple mt-3">Suscribirme</button>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 d-flex"> <div class="card shadow border-0 p-3 h-100 d-flex flex-column">
+                    <h5 class="fw-bold text-purple">Master</h5>
+                    <h3 class="fw-bold text-purple">$79.99 USD</h3>
+                    <ul class="list-unstyled mt-3 text-start mx-auto lista-planes"> 
+                        <li>Revisión profesional</li>
+                        <li>Materiales exclusivos</li>
+                        <li>Comunidad premium</li>
+                    </ul>
+                    <button class="btn btn-purple mt-3">Suscribirme</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- =============================== -->
+<!-- SECCIÓN CERTIFICADO / TALENTO  -->
+<!-- =============================== -->
+<section class="certificado-section py-5">
+    <div class="container">
+
+        <div class="certificado-box">
+
+            <!-- COLUMNA IZQUIERDA -->
+            <div class="certificado-left">
+                <h2 class="cert-title">Valida tu Certificado:</h2>
+                <h3 class="cert-subtitle" style="color: rgb(50, 18, 131);">¡Obtén tu Certificado aquí!</h3>
+
+                <p class="cert-text">
+                    Sé parte de la comunidad de certificados y obtén nuevas ofertas.
+                </p>
+
+              <a class="btn-orange cert-btn" data-bs-toggle="modal" data-bs-target="#modalCertificados">
+                Más sobre certificados
+              </a>
+
+
+
+            </div>
+
+            <!-- COLUMNA DERECHA -->
+            <div class="certificado-right">
+                <h3 class="talent-title">Obtén mi Talento:</h3>
+
+                <p class="talent-text">
+                    Una vez termines un curso, se evaluará y obtendrás tu certificado
+                    avalado por instituciones de Arte y Diseño.
+                </p>
+
+                <img src="../assets/imagenes/Talento.png" class="talent-img" alt="Certificado">
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- =============================== -->
+<!-- MODAL: INFORMACIÓN DE CERTIFICADOS -->
+<!-- =============================== -->
+<div class="modal fade" id="modalCertificados" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content modal-cert">
+
+            <div class="modal-header border-0">
+                <h5 class="modal-title modal-title-cert">Información sobre Certificados</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="row align-items-center">
+                    
+                    <!-- Imagen -->
+                    <div class="col-md-5 text-center">
+                        <img src="../assets/imagenes/certificado-info.png" class="modal-cert-img" alt="Certificado">
+                    </div>
+
+                    <!-- Texto -->
+                    <div class="col-md-7">
+                        <p class="modal-text">
+                            Nuestros certificados están avalados por instituciones especializadas en Arte y Diseño.
+                            Una vez completes un curso, se evaluarán tus habilidades mediante proyectos prácticos,
+                            asegurando que tu talento quede validado con estándares profesionales.
+                        </p>
+
+                        <p class="modal-text">
+                            Además, tu certificado te permitirá unirte a nuestra comunidad de creadores,
+                            acceder a oportunidades, y fortalecer tu portafolio profesional.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer border-0">
+                <button type="button" class="btn-close-cert" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- =============================== -->
+<!-- SECCIÓN TESTIMONIOS / RESEÑAS -->
+<!-- =============================== -->
+<section class="testimonios-section py-5">
+    <div class="container">
+
+        <!-- TÍTULO PRINCIPAL -->
+        <h2 class="testimonios-title text-center mb-5">
+            ¿Listo para transformar tu Arte?
+        </h2>
+
+        <!-- TARJETAS DE TESTIMONIOS -->
+        <div class="row justify-content-center g-4 mb-5">
+
+            <!-- 1 -->
+            <div class="col-12 col-md-3 d-flex justify-content-center">
+                <div class="test-card">
+                    <img src="../assets/imagenes/user1.png" class="test-img" alt="Testimonio">
+                    <p class="test-name">Pedro H.</p>
+                    <p class="test-text">Aprendí mucho gracias a los profesores.</p>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="col-12 col-md-3 d-flex justify-content-center">
+                <div class="test-card">
+                    <img src="../assets/imagenes/user2.png" class="test-img" alt="Testimonio">
+                    <p class="test-name">Elizabeth L.</p>
+                    <p class="test-text">Te ayudan y dan tips en tiempo real.</p>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="col-12 col-md-3 d-flex justify-content-center">
+                <div class="test-card">
+                    <img src="../assets/imagenes/user3.png" class="test-img" alt="Testimonio">
+                    <p class="test-name">Héctor P.</p>
+                    <p class="test-text">Me encanta la variedad de curso.</p>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="col-12 col-md-3 d-flex justify-content-center">
+                <div class="test-card">
+                    <img src="../assets/imagenes/user4.png" class="test-img" alt="Testimonio">
+                    <p class="test-name">Rosa J.</p>
+                    <p class="test-text">Me encanta la variedad de curso.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ESTRELLAS + TEXTO -->
+        <div class="row justify-content-center align-items-center mt-4">
+
+            <!-- ESTRELLAS -->
+            <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                <p class="estrellas-title">Con valoración de 5 estrellas!</p>
+                <div class="estrellas">
+                    ★ ★ ★ ★ ★
+                </div>
+            </div>
+
+            <!-- TEXTO DERECHA -->
+            <div class="col-md-6 text-center text-md-start">
+                <p class="reseña-text">
+                    Con más de 1000 reseñas positivas y el respaldo de profesores de todo el mundo
+                    con habilidades extraordinarias y la disposición de enseñar.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<div class="modal fade" id="modalUnete" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content pp-modal">
+
+   
+      <button type="button" class="btn-close btn-close-black pp-close" data-bs-dismiss="modal"></button>
+      
+      <div class="row g-0">
+
+   
+        <div class="col-lg-6 p-4 pp-left">
+
+          <h2 class="pp-title">
+            Aprende <span>Diseño y Creatividad</span> con Pixel Pincel
+          </h2>
+
+          <p class="pp-price">
+            <span class="old-price">$500 MXN</span> → <span class="new-price">$0 MXN</span>
+          </p>
+
+          <button class="pp-btn w-100">Suscribirse</button>
+
+          <p class="pp-small-text mt-3">Oferta por tiempo limitado</p>
+
+        </div>
+
+        <div class="col-lg-6 pp-right">
+          <div class="pp-grid">
+            <img src="../assets/imagenes/modal1.jpg" alt="pinturas">
+            <img src="../assets/imagenes/modal2.jpg" alt="diseño">
+            <img src="../assets/imagenes/modal3.jpg" alt="acuarelas">
+            <img src="../assets/imagenes/modal4.jpg" alt="pintura">
+            <img src="../assets/imagenes/modal5.jpg" alt="galeria">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- =============================== -->
+<!-- SECCIÓN FAQ + CONTACTO -->
+<!-- =============================== -->
+<section class="faq-contacto-section">
+
+    <div class="faq-contacto-container">
+
+        <!-- BLOQUE FAQ -->
+        <div class="faq-box">
+            <h2 class="faq-title">Conoce mas de Pixel Pincel</h2>
+
+            <select class="faq-item">
+                <option>¿Cuándo recibiré mi certificado?</option>
+            </select>
+
+            <select class="faq-item">
+                <option>¿Como me suscribo a Pixel Pincel?</option>
+            </select>
+
+            <select class="faq-item">
+                <option>¿Qué diferencia hay entre la suscripción anual y la mensual?</option>
+            </select>
+
+            <select class="faq-item">
+                <option>¿Hay cursos gratuitos?</option>
+            </select>
+        </div>
+
+        <!-- BLOQUE CONTACTO -->
+        <div class="contact-box">
+
+            <h2 class="contact-title">CONTACTANOS</h2>
+
+            <label>Nombre</label>
+            <input type="text" placeholder="Value">
+
+            <label>Número Telefónico</label>
+            <input type="text" placeholder="Value">
+
+            <label>Email</label>
+            <input type="email" placeholder="Value">
+
+            <label>Mensaje</label>
+            <textarea placeholder="Value"></textarea>
+
+            <button class="contact-btn">Enviar</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+    <footer class="footer-figma mt-5">
+        <div class="container">
+
+         
+            <div class="d-flex gap-3 mb-4 footer-icons-row">
+                <i class="bi bi-dribbble footer-icon"></i>
+                <i class="bi bi-x footer-icon"></i>
+                <i class="bi bi-instagram footer-icon"></i>
+                <i class="bi bi-youtube footer-icon"></i>
+                <i class="bi bi-linkedin footer-icon"></i>
+            </div>
+
+            <div class="row text-white">
+
+                
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="footer-title-col">Información</h5>
+
+                    <p class="footer-link">UX design</p>
+
+                    <p class="footer-small mt-3 mb-0">Correo: contacto@pixelpincel.com</p>
+                    <p class="footer-small mt-1 mb-0">Teléfono: +52 55 1234 5678</p>
+                    <p class="footer-small mt-1">Atención: Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+                </div>
+
+                
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="footer-title-col">Explore</h5>
+
+                    <p class="footer-link">Design</p>
+                    <p class="footer-link">Prototyping</p>
+                    <p class="footer-link">Development features</p>
+                    <p class="footer-link">Design systems</p>
+                    <p class="footer-link">Collaboration features</p>
+                    <p class="footer-link">Design process</p>
+                    <p class="footer-link">FigJam</p>
+                </div>
+
+                
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="footer-title-col">Resources</h5>
+
+                    <p class="footer-link">Blog</p>
+                    <p class="footer-link">Best practices</p>
+                    <p class="footer-link">Colors</p>
+                    <p class="footer-link">Color wheel</p>
+                    <p class="footer-link">Support</p>
+                    <p class="footer-link">Developers</p>
+                    <p class="footer-link">Resource library</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
